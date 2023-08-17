@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/layout_item_TV"
+    android:layout_margin="10dp"
+    android:foreground="?attr/selectableItemBackground">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_TuVung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/itemtuvung">
+        </ImageView>
+        <TextView
+            android:id="@+id/textTitleTiengAnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếng Anh:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/img_TuVung"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+        <TextView
+            android:id="@+id/textTiengAnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            android:layout_toRightOf="@+id/textTitleTiengAnh"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textTitleTiengViet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếng Việt:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/img_TuVung"
+            android:layout_below="@+id/textTitleTiengAnh"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+        >
+        </TextView>
+        <TextView
+            android:id="@+id/textViet"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sách"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/textTitleTiengAnh"
+            android:layout_toRightOf="@+id/textTitleTiengViet"
+            android:layout_marginTop="5dp">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/chkLuuTuVung"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"></CheckBox>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

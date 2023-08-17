@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ItemOnTapTuVungActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/toolbar"
+        android:elevation="4dp"
+        android:background="@color/lavender"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tvArrowBack"
+            android:layout_width="wrap_content"
+            android:drawableStart="@drawable/baseline_arrow_back_ios_24"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_name_user"
+            android:layout_width="match_parent"
+            android:text="Ôn tập từ vựng"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="-15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edtTimTuVung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/border_black">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_categoryLuyenThi"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

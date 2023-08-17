@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".UI.DocHieuTestNhanhActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/lavender"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tvArrowBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_arrow_back_ios_24"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_ThoiGian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="00:00"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_name_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="Câu 1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:id="@+id/lnChiTiet"
+            android:layout_below="@+id/toolbar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@drawable/border_black_bot">
+
+            <TextView
+                android:id="@+id/tvCurrent"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:text="Câu 1:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnChiTiet"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_black_top"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tvCauHoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đề"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:layout_alignEnd="@+id/linearLayout2">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_black_bot"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+                        <TextView
+                            android:id="@+id/tvCau1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Câu 1:"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvA1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án A"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvB1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án B"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvC1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án C"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvD1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án D1"
+                            android:textColor="@color/black"></TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_black_bot"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <TextView
+                            android:id="@+id/tvCau2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Câu 2:"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvA2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án A"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvB2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án B"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvC2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án C"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvD2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án D"
+                            android:textColor="@color/black"></TextView>
+
+
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_black_bot"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+                        <TextView
+                            android:id="@+id/tvCau"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Câu 3:"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvA3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án A"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvB3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án B"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvC3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án C"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvD3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án D"
+                            android:textColor="@color/black"></TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_black_bot"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <TextView
+                            android:id="@+id/tvCau4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Câu 4:"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvA4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án A"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvB4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án B"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvC4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án C"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvD4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="16dp"
+                            android:background="@drawable/border_black"
+                            android:paddingLeft="20dp"
+                            android:text="Đáp án D"
+                            android:textColor="@color/black"></TextView>
+
+
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnXacNhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout42"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="22dp"
+
+            android:text="Hoàn tất">
+
+        </Button>
+    </RelativeLayout>
+
+
+
+</ScrollView>

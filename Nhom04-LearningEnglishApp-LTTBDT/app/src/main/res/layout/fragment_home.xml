@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewTrangChu"
+            android:layout_width="0dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/demo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewTrangChu">
+
+            <TextView
+                android:id="@+id/tvTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Từ vựng:">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_categoryTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tvNH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Nghe hiểu:">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_categoryNH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tvDH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Đọc hiểu:">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_categoryDH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTestNhanh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCategory">
+
+            <ImageView
+                android:id="@+id/imageViewTrangChu2"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/demo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCategory2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewTrangChu"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLichSu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutTestNhanh">
+
+            <TextView
+                android:id="@+id/tv_LichSu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Sổ tay:"
+                android:drawableLeft="@drawable/baseline_star_24"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_black">
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:drawableLeft="@drawable/baseline_font_download_24"
+                        android:text="Từ vựng"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Số câu hỏi"
+                        android:drawableLeft="@drawable/baseline_menu_book_24"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvSoTuVungLuu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+
+                        android:textColor="@color/black"
+                        android:textSize="60dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="60dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnOnTuVung"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Ôn tập"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Ôn tập"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
